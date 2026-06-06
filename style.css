@@ -333,7 +333,7 @@ button:hover {
 .touch-controls {
   display: none;
   margin: 15px auto 10px;
-  max-width: 100%;
+  max-width: fit-content;
   padding: 15px;
   background: rgba(0, 0, 0, 0.7);
   border: 2px solid #0ff;
@@ -343,11 +343,11 @@ button:hover {
 
 .controls-layout {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  max-width: 400px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .dpad-section {
@@ -538,14 +538,13 @@ button:hover {
     order: 4;
     position: sticky;
     bottom: 0;
-    margin: 10px -10px 0;
+    margin: 10px auto 0;
     padding: 12px;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+    border-radius: 15px 15px 0 0;
     border-bottom: none;
     background: rgba(0, 0, 0, 0.95);
     z-index: 100;
+    max-width: fit-content;
   }
 
   #startScreen, #gameOverScreen {
@@ -618,6 +617,7 @@ button:hover {
 
   .controls-layout {
     gap: 15px;
+    padding: 0;
   }
 
   #startScreen, #gameOverScreen {
